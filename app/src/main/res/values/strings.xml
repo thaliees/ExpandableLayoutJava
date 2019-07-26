@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ExpandableLayout</string>
+    <string name="button_collapsed">Collapsed</string>
+    <string name="button_expanded">Expanded</string>
+    <string name="button_collapsing">Collapsing</string>
+    <string name="button_expanding">Expanding</string>
+    <string name="label_expansion">Value expansion: %f</string>
+</resources>
