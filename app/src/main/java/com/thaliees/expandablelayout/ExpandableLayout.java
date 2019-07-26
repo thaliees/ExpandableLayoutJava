@@ -215,8 +215,7 @@ public class ExpandableLayout extends FrameLayout {
 
         // If you use the interface from your activity
         if (listener != null) {
-            listener.onExpansionUpdate(expansion, state);
-            listener.onExpansionUpdate(expansion);
+            listener.onExpansionUpdate(this, expansion, state);
         }
     }
 
@@ -284,12 +283,14 @@ public class ExpandableLayout extends FrameLayout {
         /**
          * Callback for expansion updates
          *
+         * @param view              Value of the view
          * @param expansionFraction Value between 0 (collapsed) and 1 (expanded) representing the the expansion progress
          * @param state             Representing the current expansion stateLayout
          */
-        void onExpansionUpdate(float expansionFraction, int state);
+        //void onExpansionUpdate(float expansionFraction, int state);
         // Or simply
         //void onExpansionUpdate(int state);
-        void onExpansionUpdate(float expansionFraction);
+        //void onExpansionUpdate(float expansionFraction);
+        void onExpansionUpdate(View view, float expansionFraction, int state);
     }
 }
